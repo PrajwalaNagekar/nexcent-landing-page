@@ -1,8 +1,13 @@
+import landing from "@/data/landing.json";
 
-export default function Home() {
-  return (
-    <div>
-      home
-    </div>
-  );
+import Navbar from "@/components/layout/Navbar";
+
+export default function HomePage() {
+    return (
+        <>
+            <Navbar
+                data={landing.navbar}
+            />
+        </>
+    );
 }
