@@ -13,22 +13,34 @@ export default function AboutContent({
     <div
       className="
         flex
-        h-[268px]
-        w-[661px]
+        w-full
         flex-col
-        gap-[32px]
+        gap-6
+        
+        sm:gap-7
+        
+        lg:h-[268px]
+        lg:w-[661px]
+        lg:gap-[32px]
       "
     >
 
       <h2
         className="
           m-0
-          w-[601px]
+          w-full
           font-['Inter']
-          text-[36px]
+          text-[28px]
           font-semibold
-          leading-[44px]
+          leading-[36px]
           text-[#4D4D4D]
+          
+          sm:text-[32px]
+          sm:leading-[40px]
+          
+          lg:w-[601px]
+          lg:text-[36px]
+          lg:leading-[44px]
         "
       >
         {data.title}
@@ -38,12 +50,14 @@ export default function AboutContent({
       <p
         className="
           m-0
-          w-[601px]
+          w-full
           font-['Inter']
           text-[14px]
           font-normal
           leading-[20px]
           text-[#717171]
+          
+          lg:w-[601px]
         "
       >
         {data.description}

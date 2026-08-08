@@ -9,42 +9,59 @@ interface ClientLogo {
 interface ClientLogosProps {
   logos: ClientLogo[];
   logoSize?: number;
+  gap?: number;
 }
 
 export default function ClientLogos({
   logos,
   logoSize = 48,
+  gap,
 }: ClientLogosProps) {
   return (
     <div
       className="
         flex
-        h-[98px]
-        w-[1152px]
+        w-full
+        max-w-full
         items-center
-        justify-between
+        justify-center
+        flex-wrap
+        gap-6
+        
+        sm:gap-8
+        sm:justify-between
+        
+        lg:h-[98px]
+        lg:w-[1152px]
+        lg:flex-nowrap
+        lg:justify-between
       "
+      style={gap !== undefined ? { gap: `${gap}px` } : undefined}
     >
       {logos.map((logo) => (
         <div
           key={logo.id}
           className="
             flex
-            h-[48px]
-            w-[48px]
             shrink-0
             items-center
             justify-center
           "
+          style={{
+            height: `${logoSize}px`,
+            width: `${logoSize}px`,
+          }}
         >
           <Image
             src={logo.src}
             alt={logo.alt}
             width={logoSize}
             height={logoSize}
+            style={{
+              height: `${logoSize}px`,
+              width: `${logoSize}px`,
+            }}
             className="
-              h-[48px]
-              w-[48px]
               object-contain
             "
           />

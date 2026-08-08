@@ -36,7 +36,7 @@ export default function BlogCard({ post }: BlogCardProps) {
         />
       </div>
 
-      {/* Overlapping card */}
+     
       <div
         className="
           relative

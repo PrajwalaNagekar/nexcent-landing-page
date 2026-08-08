@@ -45,34 +45,57 @@ export default function Testimonial() {
     return (
         <section
             className="
-    mt-[42px]
-    w-full
-    bg-[#F5F7FA]
-  "
+                mt-[42px]
+                w-full
+                bg-[#F5F7FA]
+                py-8
+                
+                sm:py-12
+                
+                lg:py-0
+            "
         >
             {/* Main testimonial container */}
             <div
                 className="
-          grid
-          h-[390px]
-          w-full
-          grid-cols-[326px_1fr]
-          gap-[78px]
-          px-[144px]
-          py-[32px]
-        "
+                    flex
+                    flex-col
+                    w-full
+                    gap-8
+                    px-5
+                    
+                    sm:flex-col
+                    sm:gap-10
+                    sm:px-8
+                    
+                    lg:grid
+                    lg:h-[390px]
+                    lg:grid-cols-[326px_1fr]
+                    lg:gap-[78px]
+                    lg:px-[144px]
+                    lg:py-[32px]
+                "
             >
                 {/* ================= IMAGE ================= */}
                 <div
                     className="
-            relative
-            h-[326px]
-            w-[326px]
-            shrink-0
-            overflow-hidden
-            rounded-[6px]
-            self-start
-          "
+                        relative
+                        w-full
+                        max-w-[300px]
+                        aspect-square
+                        mx-auto
+                        shrink-0
+                        overflow-hidden
+                        rounded-[6px]
+                        
+                        sm:max-w-[320px]
+                        
+                        lg:h-[326px]
+                        lg:w-[326px]
+                        lg:max-w-[326px]
+                        lg:mx-0
+                        lg:self-start
+                    "
                 >
                     <Image
                         src={data.image}
@@ -85,32 +108,38 @@ export default function Testimonial() {
                 {/* ================= RIGHT CONTENT ================= */}
                 <div
                     className="
-            flex
-            h-[324px]
-            w-full
-            max-w-[748px]
-            flex-col
-          "
+                        flex
+                        w-full
+                        flex-col
+                        
+                        sm:w-full
+                        
+                        lg:h-[324px]
+                        lg:w-full
+                        lg:max-w-[748px]
+                    "
                 >
                     {/* Description */}
                     <div
                         className="
-              flex
-              w-full
-              flex-col
-              gap-[16px]
-            "
+                            flex
+                            w-full
+                            flex-col
+                            gap-4
+                            
+                            sm:gap-[16px]
+                        "
                     >
                         <p
                             className="
-                m-0
-                w-full
-                font-['Inter']
-                text-[14px]
-                font-normal
-                leading-[20px]
-                text-[#717171]
-              "
+                                m-0
+                                w-full
+                                font-['Inter']
+                                text-[14px]
+                                font-normal
+                                leading-[20px]
+                                text-[#717171]
+                            "
                         >
                             {data.description}
                         </p>
@@ -119,36 +148,46 @@ export default function Testimonial() {
                     {/* Name + Company */}
                     <div
                         className="
-              mt-[16px]
-              flex
-              h-[60px]
-              w-full
-              flex-col
-              gap-[8px]
-            "
+                            mt-4
+                            flex
+                            w-full
+                            flex-col
+                            gap-2
+                            
+                            sm:mt-[16px]
+                            sm:gap-[8px]
+                            
+                            lg:h-[60px]
+                        "
                     >
                         <h3
                             className="
-                m-0
-                font-['Inter']
-                text-[18px]
-                font-semibold
-                leading-[28px]
-                text-[#4CAF4F]
-              "
+                                m-0
+                                font-['Inter']
+                                text-[16px]
+                                font-semibold
+                                leading-[24px]
+                                text-[#4CAF4F]
+                                
+                                sm:text-[18px]
+                                sm:leading-[28px]
+                            "
                         >
                             {data.name}
                         </h3>
 
                         <p
                             className="
-                m-0
-                font-['Inter']
-                text-[14px]
-                font-normal
-                leading-[24px]
-                text-[#89939E]
-              "
+                                m-0
+                                font-['Inter']
+                                text-[13px]
+                                font-normal
+                                leading-[20px]
+                                text-[#89939E]
+                                
+                                sm:text-[14px]
+                                sm:leading-[24px]
+                            "
                         >
                             {data.company}
                         </p>
@@ -157,23 +196,36 @@ export default function Testimonial() {
                     {/* Logos + Meet All Customers */}
                     <div
                         className="
-              mt-[16px]
-              flex
-              h-[48px]
-              w-full
-              items-center
-              justify-between
-            "
+                            mt-6
+                            flex
+                            w-full
+                            flex-col
+                            items-center
+                            gap-6
+                            
+                            sm:mt-8
+                            sm:flex-row
+                            sm:justify-between
+                            
+                            lg:mt-[16px]
+                            lg:h-[48px]
+                        "
                     >
                         {/* Logos */}
                         <div
                             className="
-                flex
-                h-[48px]
-                w-[493px]
-                items-center
-                pl-[32px]
-              "
+                                flex
+                                w-full
+                                items-center
+                                justify-center
+                                
+                                sm:w-auto
+                                sm:pl-0
+                                
+                                lg:h-[48px]
+                                lg:w-[493px]
+                                lg:pl-[32px]
+                            "
                         >
                             <ClientLogos
                                 logos={testimonialLogos}
@@ -186,19 +238,24 @@ export default function Testimonial() {
                         <Link
                             href={data.cta.href}
                             className="
-                flex
-                h-[44px]
-                w-[223px]
-                items-center
-                gap-[8px]
-                px-[8px]
-                font-['Inter']
-                text-[16px]
-                font-medium
-                leading-[24px]
-                whitespace-nowrap
-                text-[#4CAF4F]
-              "
+                                flex
+                                items-center
+                                gap-2
+                                px-2
+                                font-['Inter']
+                                text-[15px]
+                                font-medium
+                                leading-[24px]
+                                whitespace-nowrap
+                                text-[#4CAF4F]
+                                
+                                sm:gap-[8px]
+                                sm:px-[8px]
+                                sm:text-[16px]
+                                
+                                lg:h-[44px]
+                                lg:w-[223px]
+                            "
                         >
                             <span>{data.cta.label}</span>
 

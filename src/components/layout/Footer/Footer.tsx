@@ -18,15 +18,36 @@ export default function Footer() {
         className="
           mx-auto
           flex
+          flex-col
           min-h-[285px]
-          w-[1152px]
+          w-full
           justify-between
-          px-0
-          py-[56px]
+          gap-[40px]
+          px-5
+          py-[40px]
+          
+          sm:flex-col
+          sm:gap-[48px]
+          sm:px-8
+          sm:py-[48px]
+          
+          lg:w-[1152px]
+          lg:flex-row
+          lg:gap-0
+          lg:px-0
+          lg:py-[56px]
         "
       >
 
-        <div className="w-[350px]">
+        <div
+          className="
+            w-full
+            
+            sm:w-full
+            
+            lg:w-[350px]
+          "
+        >
           <Link
             href="#"
             className="inline-flex items-center"
@@ -42,13 +63,13 @@ export default function Footer() {
 
           <div
             className="
-      mt-[32px]
-      font-['Inter']
-      text-[14px]
-      font-normal
-      leading-[20px]
-      text-[#F5F7FA]
-    "
+              mt-[32px]
+              font-['Inter']
+              text-[14px]
+              font-normal
+              leading-[20px]
+              text-[#F5F7FA]
+            "
           >
             <p className="m-0">
               {footer.copyright}
@@ -82,7 +103,15 @@ export default function Footer() {
         />
 
 
-        <div className="w-[255px]">
+        <div
+          className="
+            w-full
+            
+            sm:w-full
+            
+            lg:w-[255px]
+          "
+        >
           <h3
             className="
               m-0
@@ -101,7 +130,8 @@ export default function Footer() {
               mt-[24px]
               flex
               h-[40px]
-              w-[255px]
+              w-full
+              max-w-[255px]
               items-center
               rounded-[8px]
               bg-[#515B60]
@@ -165,7 +195,15 @@ function FooterColumn({
   links,
 }: FooterColumnProps) {
   return (
-    <div className="w-[160px]">
+    <div
+      className="
+        w-full
+        
+        sm:w-full
+        
+        lg:w-[160px]
+      "
+    >
       <h3
         className="
           m-0

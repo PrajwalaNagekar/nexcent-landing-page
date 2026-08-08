@@ -9,25 +9,43 @@ export default function FooterCTA() {
     <section
       className="
         flex
-        h-[314px]
         w-full
         flex-col
         items-center
         justify-center
         bg-[#F5F7FA]
+        px-5
+        py-12
+        
+        sm:px-8
+        sm:py-16
+        
+        lg:h-[314px]
+        lg:px-0
+        lg:py-0
       "
     >
       <h2
         className="
           m-0
-          w-[887px]
+          w-full
+          max-w-[90%]
           text-center
           font-['Inter']
-          text-[64px]
+          text-[32px]
           font-semibold
-          leading-[76px]
+          leading-[40px]
           tracking-[0]
           text-[#263238]
+          
+          sm:max-w-[600px]
+          sm:text-[48px]
+          sm:leading-[56px]
+          
+          lg:w-[887px]
+          lg:max-w-[887px]
+          lg:text-[64px]
+          lg:leading-[76px]
         "
       >
         {title}

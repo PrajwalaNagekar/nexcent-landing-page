@@ -33,47 +33,54 @@ export default function CommunityCard({
         lg:py-[24px]
       "
       style={{
+        borderRadius: "18px 5px 10px 5px",
         boxShadow: "0px 2px 4px 0px rgba(171, 190, 209, 0.2)",
+
       }}
     >
       {/* Icon Container */}
-      <div
-        className="
-          flex
-          items-center
-          justify-center
-          rounded-[10px]
-          bg-[#E8F5E9]
-          
-          h-[56px]
-          w-[56px]
-          
-          sm:h-[60px]
-          sm:w-[60px]
-          
-          lg:h-[65px]
-          lg:w-[65px]
-        "
-      >
-        <Image
-          src={card.icon}
-          alt=""
-          width={65}
-          height={65}
-          className="
-            h-[40px]
-            w-[40px]
-            object-contain
-            
-            sm:h-[45px]
-            sm:w-[45px]
-            
-            lg:h-[48px]
-            lg:w-[48px]
-          "
-        />
-      </div>
+   <div
+  className="
+    relative
+    flex
+    items-center
+    justify-center
+    h-[65px]
+    w-[65px]
+    overflow-visible
+  "
+>
+  {/* Small green background */}
+  <div
+    className="
+      absolute
+      top-[3px]
+      left-[14px]
+      z-0
+      h-[62px]
+      w-[68px]
+      bg-[#E8F5E9]
+    "
+    style={{
+      borderRadius: "14px 0 22px 0",
+    }}
+  />
 
+  {/* Icon */}
+  <Image
+    src={card.icon}
+    alt=""
+    width={65}
+    height={65}
+    className="
+      relative
+      z-10
+      h-[48px]
+      w-[48px]
+      object-contain
+    "
+  />
+</div>
       {/* Heading */}
       <h3
         className="
