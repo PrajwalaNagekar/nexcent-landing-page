@@ -1,0 +1,24 @@
+{
+  "title": "Manage your entire community in a single system",
+  "description": "Who is Nexcent suitable for?",
+  "cards": [
+    {
+      "id": "membership",
+      "icon": "/icons/community/icon1.png",
+      "title": "Membership Organisations",
+      "description": "Our membership management software provides full automation of membership renewals and payments."
+    },
+    {
+      "id": "national",
+      "icon": "/icons/community/icon2.png",
+      "title": "National Associations",
+      "description": "Our membership management software provides full automation of membership renewals and payments."
+    },
+    {
+      "id": "clubs",
+      "icon": "/icons/community/icon3.png",
+      "title": "Clubs And Groups",
+      "description": "Our membership management software provides full automation of membership renewals and payments."
+    }
+  ]
+}

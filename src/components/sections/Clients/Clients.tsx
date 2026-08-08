@@ -5,16 +5,18 @@ import clientsData from "@/data/clients.json";
 
 export default function Clients() {
   return (
-    <section className="w-full bg-white">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center">
+    <section className="w-full bg-white mb-[40px]">
+  
+      <div className="flex w-full flex-col items-center">
         <ClientsHeader
           title={clientsData.title}
           description={clientsData.description}
         />
+      </div>
 
-        <div className="mt-[16px]">
-          <ClientLogos logos={clientsData.logos} />
-        </div>
+
+      <div className="mt-[16px] flex w-full justify-center">
+        <ClientLogos logos={clientsData.logos} />
       </div>
     </section>
   );

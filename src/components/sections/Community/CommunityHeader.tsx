@@ -1,23 +1,23 @@
-interface ClientsHeaderProps {
+interface CommunityHeaderProps {
   title: string;
   description: string;
 }
 
-export default function ClientsHeader({
+export default function CommunityHeader({
   title,
   description,
-}: ClientsHeaderProps) {
+}: CommunityHeaderProps) {
   return (
-    <div className="flex w-[1110px] flex-col items-center text-center">
+    <div className="flex w-full flex-col items-center">
       <h2
         className="
-          m-0
-          h-[44px]
-          w-[1110px]
-          font-['Inter']
+          h-[88px]
+          w-[542px]
+          text-center
           text-[36px]
           font-semibold
           leading-[44px]
+          tracking-[0]
           text-[#4D4D4D]
         "
       >
@@ -26,14 +26,13 @@ export default function ClientsHeader({
 
       <p
         className="
-          m-0
-          mt-[8px]
           h-[24px]
-          w-[1110px]
-          font-['Inter']
+          w-full
+          text-center
           text-[16px]
           font-normal
           leading-[24px]
+          tracking-[0]
           text-[#717171]
         "
       >
