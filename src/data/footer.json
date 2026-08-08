@@ -1,0 +1,94 @@
+{
+  "cta": {
+    "title": "Pellentesque suscipit fringilla libero eu.",
+    "button": {
+      "label": "Get a Demo",
+      "href": "#"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2020 Nexcent ltd.",
+    "rights": "All rights reserved",
+    "socials": [
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "src": "/images/footer/instagram.png",
+        "href": "#"
+      },
+      {
+        "id": "dribbble",
+        "label": "Dribbble",
+        "src": "/images/footer/dribble.png",
+        "href": "#"
+      },
+      {
+        "id": "twitter",
+        "label": "Twitter",
+        "src": "/images/footer/twitter.png",
+        "href": "#"
+      },
+      {
+        "id": "youtube",
+        "label": "YouTube",
+        "src": "/images/footer/ytIcon.png",
+        "href": "#"
+      }
+    ],
+    "company": {
+      "title": "Company",
+      "links": [
+        {
+          "label": "About us",
+          "href": "#"
+        },
+        {
+          "label": "Blog",
+          "href": "#"
+        },
+        {
+          "label": "Contact us",
+          "href": "#"
+        },
+        {
+          "label": "Pricing",
+          "href": "#"
+        },
+        {
+          "label": "Testimonials",
+          "href": "#"
+        }
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "links": [
+        {
+          "label": "Help center",
+          "href": "#"
+        },
+        {
+          "label": "Terms of service",
+          "href": "#"
+        },
+        {
+          "label": "Legal",
+          "href": "#"
+        },
+        {
+          "label": "Privacy policy",
+          "href": "#"
+        },
+        {
+          "label": "Status",
+          "href": "#"
+        }
+      ]
+    },
+    "newsletter": {
+      "title": "Stay up to date",
+      "placeholder": "Your email address",
+      "sendIcon": "/images/footer/send.png"
+    }
+  }
+}

@@ -11,7 +11,7 @@ export default function HeroContent({
   slide,
 }: HeroContentProps) {
   return (
-    <div className="flex w-full flex-col items-start gap-6">
+    <div className="flex w-full flex-col items-start gap-6 lg:max-w-[657px]">
       <h1 className="w-full text-[40px] font-semibold leading-[48px] tracking-[0] text-[#4D4D4D] sm:text-[48px] sm:leading-[58px] lg:text-[64px] lg:leading-[76px]">
         {slide.title}
 

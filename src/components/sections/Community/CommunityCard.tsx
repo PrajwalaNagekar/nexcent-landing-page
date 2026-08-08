@@ -23,41 +23,58 @@ export default function CommunityCard({
         px-[24px]
         py-[20px]
         
-        sm:h-[260px]
+        sm:h-[270px]
         sm:px-[28px]
         sm:py-[22px]
         
-        lg:h-[260px]
+        lg:h-[280px]
         lg:w-[299px]
-        lg:px-[32px]
+        lg:px-[16px]
         lg:py-[24px]
       "
       style={{
         boxShadow: "0px 2px 4px 0px rgba(171, 190, 209, 0.2)",
       }}
     >
-
+      {/* Icon Container */}
       <div
         className="
           flex
-          h-[48px]
-          w-[48px]
           items-center
           justify-center
-          rounded-[8px]
+          rounded-[10px]
           bg-[#E8F5E9]
+          
+          h-[56px]
+          w-[56px]
+          
+          sm:h-[60px]
+          sm:w-[60px]
+          
+          lg:h-[65px]
+          lg:w-[65px]
         "
       >
         <Image
           src={card.icon}
           alt=""
-          width={32}
-          height={32}
-          className="h-[32px] w-[32px] object-contain"
+          width={65}
+          height={65}
+          className="
+            h-[40px]
+            w-[40px]
+            object-contain
+            
+            sm:h-[45px]
+            sm:w-[45px]
+            
+            lg:h-[48px]
+            lg:w-[48px]
+          "
         />
       </div>
 
-    
+      {/* Heading */}
       <h3
         className="
           text-center
@@ -65,12 +82,16 @@ export default function CommunityCard({
           font-semibold
           leading-[28px]
           text-[#4D4D4D]
+          w-full
           
           sm:text-[22px]
           sm:leading-[30px]
+          sm:h-[66px]
           
-          lg:text-[24px]
-          lg:leading-[32px]
+          lg:text-[28px]
+          lg:leading-[36px]
+          lg:h-[72px]
+          lg:w-[267px]
         "
       >
         {card.title}
@@ -84,12 +105,16 @@ export default function CommunityCard({
           font-normal
           leading-[18px]
           text-[#717171]
+          w-full
           
           sm:text-[13.5px]
           sm:leading-[19px]
+          sm:h-[54px]
           
           lg:text-[14px]
           lg:leading-[20px]
+          lg:h-[60px]
+          lg:w-[251px]
         "
       >
         {card.description}

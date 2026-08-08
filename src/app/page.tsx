@@ -7,6 +7,10 @@ import { Clients } from "@/components/sections/Clients";
 import { Community } from "@/components/sections/Community";
 import { About } from "@/components/sections/About";
 import Stats from "@/components/sections/Stats";
+import Testimonial from "@/components/sections/Testimonial";
+import Blog from "@/components/sections/Blog";
+import FooterCTA from "@/components/sections/FooterCTA";
+import Footer from "@/components/layout/Footer";
 export default function HomePage() {
   return (
     <main>
@@ -24,7 +28,11 @@ export default function HomePage() {
       <Stats />
 
       <About data={aboutData.footerCta} />
-    
+      <Testimonial />
+      <Blog />
+      <FooterCTA />
+
+      <Footer />
     </main>
   );
 }
