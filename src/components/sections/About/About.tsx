@@ -1,13 +1,16 @@
 import Image from "next/image";
 
-import aboutData from "@/data/about.json";
 import { AboutData } from "@/types/about";
 
 import AboutContent from "./AboutContent";
 
-const data = aboutData as AboutData;
+interface AboutProps {
+  data: AboutData;
+}
 
-export default function About() {
+export default function About({
+  data,
+}: AboutProps) {
   return (
     <section
       className="
@@ -15,61 +18,38 @@ export default function About() {
         w-full
         items-center
         bg-white
-        px-5
-        py-8
-        
-        sm:px-8
-        sm:py-12
-        
-        lg:px-[144px]
-        lg:py-0
+        px-[144px]
       "
     >
       <div
         className="
           flex
-          flex-col
+          h-[433px]
           w-full
           items-center
-          gap-8
-          
-          sm:gap-10
-          
-          lg:h-[433px]
-          lg:flex-row
-          lg:justify-between
-          lg:gap-0
+          justify-between
         "
       >
         {/* Illustration */}
         <div
           className="
             flex
-            w-full
-            max-w-[320px]
+            h-[433px]
+            w-[442px]
+            shrink-0
             items-center
             justify-center
-            
-            sm:max-w-[380px]
-            
-            lg:h-[433px]
-            lg:w-[442px]
-            lg:max-w-none
-            lg:shrink-0
           "
         >
           <Image
             src={data.image}
-            alt=""
+            alt={data.alt}
             width={442}
             height={433}
             className="
-              h-auto
-              w-full
+              h-[433px]
+              w-[442px]
               object-contain
-              
-              lg:h-[433px]
-              lg:w-[442px]
             "
           />
         </div>
