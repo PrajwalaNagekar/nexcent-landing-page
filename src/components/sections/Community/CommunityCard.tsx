@@ -13,15 +13,24 @@ export default function CommunityCard({
     <article
       className="
         flex
-        h-[260px]
-        w-[299px]
+        w-full
+        max-w-[299px]
         flex-col
         items-center
         gap-[8px]
         rounded-[8px]
         bg-white
-        px-[32px]
-        py-[24px]
+        px-[24px]
+        py-[20px]
+        
+        sm:h-[260px]
+        sm:px-[28px]
+        sm:py-[22px]
+        
+        lg:h-[260px]
+        lg:w-[299px]
+        lg:px-[32px]
+        lg:py-[24px]
       "
       style={{
         boxShadow: "0px 2px 4px 0px rgba(171, 190, 209, 0.2)",
@@ -52,10 +61,16 @@ export default function CommunityCard({
       <h3
         className="
           text-center
-          text-[24px]
+          text-[20px]
           font-semibold
-          leading-[32px]
+          leading-[28px]
           text-[#4D4D4D]
+          
+          sm:text-[22px]
+          sm:leading-[30px]
+          
+          lg:text-[24px]
+          lg:leading-[32px]
         "
       >
         {card.title}
@@ -65,10 +80,16 @@ export default function CommunityCard({
       <p
         className="
           text-center
-          text-[14px]
+          text-[13px]
           font-normal
-          leading-[20px]
+          leading-[18px]
           text-[#717171]
+          
+          sm:text-[13.5px]
+          sm:leading-[19px]
+          
+          lg:text-[14px]
+          lg:leading-[20px]
         "
       >
         {card.description}

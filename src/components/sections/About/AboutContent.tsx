@@ -9,23 +9,35 @@ export default function AboutContent({ data }: AboutContentProps) {
     <div
       className="
         flex
-        w-[661px]
+        w-full
         flex-col
-        gap-[32px]
+        gap-[20px]
+        
+        sm:gap-[24px]
+        
+        lg:w-[661px]
+        lg:gap-[32px]
       "
     >
       {/* Heading */}
       <h2
         className="
           m-0
-          w-[601px]
-          h-[88px]
+          w-full
           font-['Inter']
-          text-[36px]
+          text-[24px]
           font-semibold
-          leading-[44px]
+          leading-[32px]
           tracking-[0%]
           text-[#4D4D4D]
+          
+          sm:text-[28px]
+          sm:leading-[36px]
+          
+          lg:w-[601px]
+          lg:h-[88px]
+          lg:text-[36px]
+          lg:leading-[44px]
         "
       >
         {data.title}
@@ -35,14 +47,21 @@ export default function AboutContent({ data }: AboutContentProps) {
       <p
         className="
           m-0
-          w-[601px]
-          h-[80px]
+          w-full
           font-['Inter']
           text-[14px]
           font-normal
           leading-[20px]
           tracking-[0%]
           text-[#717171]
+          
+          sm:text-[15px]
+          sm:leading-[22px]
+          
+          lg:w-[601px]
+          lg:h-[80px]
+          lg:text-[14px]
+          lg:leading-[20px]
         "
       >
         {data.description}
@@ -53,22 +72,33 @@ export default function AboutContent({ data }: AboutContentProps) {
         type="button"
         className="
           flex
-          h-[52px]
-          w-[151px]
-          shrink-0
+          h-[48px]
+          w-full
+          max-w-[151px]
           items-center
           justify-center
           rounded-[4px]
           bg-[#4CAF4F]
-          px-[32px]
-          py-[14px]
+          px-[24px]
+          py-[12px]
           font-['Inter']
-          text-[16px]
+          text-[15px]
           font-medium
-          leading-[24px]
+          leading-[22px]
           tracking-[0%]
           text-white
           whitespace-nowrap
+          
+          sm:h-[50px]
+          sm:text-[15.5px]
+          sm:leading-[23px]
+          
+          lg:h-[52px]
+          lg:px-[32px]
+          lg:py-[14px]
+          lg:text-[16px]
+          lg:leading-[24px]
+          lg:shrink-0
         "
       >
         Learn More

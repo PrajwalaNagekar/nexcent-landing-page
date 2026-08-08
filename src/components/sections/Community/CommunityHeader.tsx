@@ -8,17 +8,24 @@ export default function CommunityHeader({
   description,
 }: CommunityHeaderProps) {
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex w-full flex-col items-center mb-[16px] sm:mb-[20px] lg:mb-0">
       <h2
         className="
-          h-[88px]
-          w-[542px]
+          w-full
+          max-w-[542px]
           text-center
-          text-[36px]
+          text-[24px]
           font-semibold
-          leading-[44px]
+          leading-[32px]
           tracking-[0]
           text-[#4D4D4D]
+          
+          sm:text-[28px]
+          sm:leading-[36px]
+          
+          lg:h-[88px]
+          lg:text-[36px]
+          lg:leading-[44px]
         "
       >
         {title}
@@ -26,14 +33,22 @@ export default function CommunityHeader({
 
       <p
         className="
-          h-[24px]
           w-full
           text-center
-          text-[16px]
+          text-[14px]
           font-normal
-          leading-[24px]
+          leading-[20px]
           tracking-[0]
           text-[#717171]
+          mt-[8px]
+          
+          sm:text-[15px]
+          sm:leading-[22px]
+          
+          lg:h-[24px]
+          lg:text-[16px]
+          lg:leading-[24px]
+          lg:mt-0
         "
       >
         {description}

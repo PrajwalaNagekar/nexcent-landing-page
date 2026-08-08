@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   },
   description:
     "A modern, responsive business landing page built with Next.js and Tailwind CSS.",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 export default function RootLayout({
   children,

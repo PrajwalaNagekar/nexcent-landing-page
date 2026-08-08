@@ -15,27 +15,47 @@ export default function About() {
         w-full
         items-center
         bg-white
-        px-[144px]
+        px-5
+        py-8
+        
+        sm:px-8
+        sm:py-12
+        
+        lg:px-[144px]
+        lg:py-0
       "
     >
       <div
         className="
           flex
-          h-[433px]
+          flex-col
           w-full
           items-center
-          justify-between
+          gap-8
+          
+          sm:gap-10
+          
+          lg:h-[433px]
+          lg:flex-row
+          lg:justify-between
+          lg:gap-0
         "
       >
         {/* Illustration */}
         <div
           className="
             flex
-            h-[433px]
-            w-[442px]
-            shrink-0
+            w-full
+            max-w-[320px]
             items-center
             justify-center
+            
+            sm:max-w-[380px]
+            
+            lg:h-[433px]
+            lg:w-[442px]
+            lg:max-w-none
+            lg:shrink-0
           "
         >
           <Image
@@ -44,9 +64,12 @@ export default function About() {
             width={442}
             height={433}
             className="
-              h-[433px]
-              w-[442px]
+              h-auto
+              w-full
               object-contain
+              
+              lg:h-[433px]
+              lg:w-[442px]
             "
           />
         </div>

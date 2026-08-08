@@ -8,17 +8,23 @@ export default function ClientsHeader({
   description,
 }: ClientsHeaderProps) {
   return (
-    <div className="flex w-[1110px] flex-col items-center text-center">
+    <div className="flex w-full max-w-[1110px] flex-col items-center text-center px-5 sm:px-8 lg:px-0">
       <h2
         className="
           m-0
-          h-[44px]
-          w-[1110px]
+          w-full
           font-['Inter']
-          text-[36px]
+          text-[24px]
           font-semibold
-          leading-[44px]
+          leading-[32px]
           text-[#4D4D4D]
+          
+          sm:text-[28px]
+          sm:leading-[36px]
+          
+          lg:h-[44px]
+          lg:text-[36px]
+          lg:leading-[44px]
         "
       >
         {title}
@@ -28,13 +34,19 @@ export default function ClientsHeader({
         className="
           m-0
           mt-[8px]
-          h-[24px]
-          w-[1110px]
+          w-full
           font-['Inter']
-          text-[16px]
+          text-[14px]
           font-normal
-          leading-[24px]
+          leading-[20px]
           text-[#717171]
+          
+          sm:text-[15px]
+          sm:leading-[22px]
+          
+          lg:h-[24px]
+          lg:text-[16px]
+          lg:leading-[24px]
         "
       >
         {description}

@@ -5,7 +5,7 @@ import clientsData from "@/data/clients.json";
 
 export default function Clients() {
   return (
-    <section className="w-full bg-white mb-[40px]">
+    <section className="w-full bg-white mb-[40px] px-5 sm:px-8 lg:px-0">
   
       <div className="flex w-full flex-col items-center">
         <ClientsHeader

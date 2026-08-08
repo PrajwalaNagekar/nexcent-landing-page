@@ -13,8 +13,12 @@ export default function Community() {
       className="
     w-full
     bg-white
-    px-[144px]
+    px-5
     pb-[42px]
+    
+    sm:px-8
+    
+    lg:px-[144px]
   "
     >
       <CommunityHeader
