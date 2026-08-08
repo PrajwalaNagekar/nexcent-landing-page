@@ -9,12 +9,12 @@ export default function NavbarLinks({
   navigation,
 }: NavbarLinksProps) {
   return (
-    <ul className="hidden items-center gap-10 lg:flex">
+    <ul className="hidden items-center gap-[30px] lg:flex">
       {navigation.map((item) => (
-        <li key={item.label}>
+        <li key={item.href}>
           <Link
             href={item.href}
-            className="text-sm font-medium text-gray-700 transition-colors hover:text-green-600"
+            className="text-[14px] font-medium leading-[20px] text-[#263238] transition-colors hover:text-[#4CAF4F]"
           >
             {item.label}
           </Link>

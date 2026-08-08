@@ -22,3 +22,4 @@ export interface NavbarData {
     signup: ActionButton;
   };
 }
+

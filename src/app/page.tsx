@@ -1,13 +1,16 @@
 import landing from "@/data/landing.json";
 
 import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import { Clients } from "@/components/sections/Clients";
 
 export default function HomePage() {
-    return (
-        <>
-            <Navbar
-                data={landing.navbar}
-            />
-        </>
-    );
+  return (
+    <main>
+      <Navbar data={landing.navbar} />
+
+      <Hero data={landing.hero} />
+      <Clients />
+    </main>
+  );
 }

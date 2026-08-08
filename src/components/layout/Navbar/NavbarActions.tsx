@@ -10,7 +10,7 @@ export default function NavbarActions({
   actions,
 }: NavbarActionsProps) {
   return (
-    <div className="hidden items-center gap-4 lg:flex">
+    <div className="hidden items-center gap-[14px] lg:flex">
       <Link href={actions.login.href}>
         <Button variant="secondary">
           {actions.login.label}
