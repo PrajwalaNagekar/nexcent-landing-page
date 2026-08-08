@@ -19,9 +19,11 @@ export default function Hero({ data }: HeroProps) {
       <div
         className="
           relative
+          mx-auto
           flex
           min-h-[599px]
           w-full
+          max-w-[1440px]
           flex-col
           px-5
           py-12

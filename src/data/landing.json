@@ -1,7 +1,7 @@
 {
   "navbar": {
     "logo": {
-      "src": "/logos/logo.svg",
+      "src": "/logos/Logo.svg",
       "alt": "Nexcent",
       "href": "/"
     },
