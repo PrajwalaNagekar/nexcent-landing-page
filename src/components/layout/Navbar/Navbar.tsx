@@ -12,7 +12,7 @@ interface NavbarProps {
 
 export default function Navbar({ data }: NavbarProps) {
   return (
-    <header className="relative bg-[#F5F7FA]">
+    <header className="relative bg-[#F5F7FA] z-40">
       <Container className="h-[84px]">
         <nav
           className="flex h-full items-center justify-between px-5 sm:px-8 lg:px-0"

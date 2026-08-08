@@ -47,7 +47,7 @@ export default function MobileMenu({
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 top-full w-full border-t border-gray-200 bg-[#F5F7FA] shadow-md">
+        <div className="absolute left-0 top-full w-full border-t border-gray-200 bg-[#F5F7FA] shadow-md z-50">
           <nav
             aria-label="Mobile navigation"
             className="mx-auto w-full max-w-[1230px] px-5 py-6 sm:px-8"
